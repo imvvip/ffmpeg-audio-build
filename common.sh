@@ -56,6 +56,7 @@ FFMPEG_CONFIGURE_FLAGS=(
 --enable-filter=setpts
 --enable-filter=trim
 --enable-filter=pan
+--enable-filter=silencedetect
 --disable-protocols
 --enable-protocol=file
 --enable-protocol=pipe
@@ -140,6 +141,7 @@ FFMPEG_CONFIGURE_FLAGS=(
 --enable-muxer=tta
 --enable-muxer=wav
 --enable-muxer=wv
+--enable-muxer=ipod
 --enable-decoder=aac
 --enable-decoder=aac_latm
 --enable-decoder=ac3
