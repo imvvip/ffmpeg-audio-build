@@ -12,7 +12,7 @@ FFMPEG_CONFIGURE_FLAGS=(
 --enable-pic
 --disable-doc
 --disable-debug
---disable-avdevice
+--enable-avdevice
 --disable-swscale
 --disable-programs
 --enable-ffmpeg
@@ -28,6 +28,7 @@ FFMPEG_CONFIGURE_FLAGS=(
 --disable-filters
 --disable-parsers
 --disable-indevs
+--enable-indev=lavfi
 --disable-outdevs
 --disable-encoders
 --disable-decoders
@@ -57,6 +58,8 @@ FFMPEG_CONFIGURE_FLAGS=(
 --enable-filter=trim
 --enable-filter=pan
 --enable-filter=silencedetect
+--enable-filter=sine
+--enable-filter=anullsrc
 --disable-protocols
 --enable-protocol=file
 --enable-protocol=pipe
