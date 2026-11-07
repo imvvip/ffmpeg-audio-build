@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-FFMPEG_VERSION=7.1
+FFMPEG_VERSION=7.1.1
 FFMPEG_TARBALL=ffmpeg-$FFMPEG_VERSION.tar.xz
-FFMPEG_TARBALL_URL=http://ffmpeg.org/releases/$FFMPEG_TARBALL
+FFMPEG_TARBALL_URL=https://ffmpeg.org/releases/$FFMPEG_TARBALL
 
 FFMPEG_CONFIGURE_FLAGS=(
 --disable-shared
@@ -148,6 +148,8 @@ FFMPEG_CONFIGURE_FLAGS=(
 --enable-decoder=aac
 --enable-decoder=aac_latm
 --enable-decoder=ac3
+--enable-decoder=adpcm_ms
+--enable-decoder=adpcm_ima_wav
 --enable-decoder=alac
 --enable-decoder=als
 --enable-decoder=ape
@@ -219,6 +221,8 @@ FFMPEG_CONFIGURE_FLAGS=(
 --enable-encoder=aac
 --enable-encoder=ac3
 --enable-encoder=alac
+--enable-encoder=adpcm_ima_wav
+--enable-encoder=adpcm_ms
 --enable-encoder=eac3
 --enable-encoder=flac
 --enable-encoder=libmp3lame
